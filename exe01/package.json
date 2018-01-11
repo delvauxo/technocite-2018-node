@@ -1,0 +1,17 @@
+{
+  "name": "js-review",
+  "version": "0.0.1",
+  "description": "init project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "init",
+    "git",
+    "github"
+  ],
+  "author": "Me",
+  "license": "MIT"
+}
