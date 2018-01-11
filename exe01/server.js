@@ -82,6 +82,10 @@
 
 // console.log(sommeNumbers(numbers))
 
-const numbers = [1,2,3,4,5,6,7,8]
 
-console.log(numbers.filter(item => item%2 === 0))
+
+// const numbers = [1,2,3,4,5,6,7,8]
+
+// console.log(numbers.filter(item => item%2 === 0))
+
+
