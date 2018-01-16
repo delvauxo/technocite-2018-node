@@ -1,0 +1,692 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="http://www.pass.be/service/template/js/mootools?lng=fr"></script>
+		<script type="text/javascript" src="http://www.pass.be/service/template/js/mootools-more?lng=fr"></script>
+		
+<meta name="title" content="Le Pass, mus&eacute;e des sciences &agrave; Frameries, pr&egrave;s de Mons!">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Pr&eacute;sentation du Pass, le mus&eacute;e de sciences interactif situ&eacute; &agrave; Frameries, pr&egrave;s de Mons. Activit&eacute;s pour familles, enfants, &eacute;coles, groupes, expositions, animations, films, jardin, excursion.">
+<meta name="keywords" content="Pass, sciences, mus&eacute;e, activit&eacute;s en famille, animations pour enfants, expositions, expositions interactives, &eacute;coles, groupes, activit&eacute;s en science, excursion scolaire, outil pour enseignants, sortie scolaire, animations p&eacute;dagogiques, location de salles, salles pour s&eacute;minaires, salles de r&eacute;union, &eacute;v&eacute;nements d'entreprise, salle pour mariages">
+<meta name="revisit-after" content="5 DAYS"><title>Le Pass, mus&eacute;e des sciences &agrave; Frameries, pr&egrave;s de Mons! - Le Pass</title><link rel="shortcut icon" href="http://www.pass.be/favicon.ico" type="image/x-icon"><link rel="stylesheet" href="http://www.pass.be/modules/activities/timetable/assets/css/public.css" />
+<script type="text/javascript">
+	if(window['Locale']) {
+		Locale.use('fr-FR');
+	}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="detectify-verification" content="13706c75bc7ed5f0ade068985054e34f" />
+
+		<link href="http://www.pass.be/service/template/css/2?lng=fr" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://www.pass.be/service/template/js/main?lng=fr"></script>
+		<script type="text/javascript">
+			window.addEvent('load', function() {
+				alignBoxes(0);
+			});
+			
+			function alignBoxes(iIndex) {
+				oActivities = $$('.home-activities')[iIndex];
+				$('home-news').setStyle('height', 'auto');
+				oActivities.setStyle('height', 'auto');
+				oLeftDimensions = oActivities.getCoordinates();
+				oRightDimensions = $('home-news').getCoordinates();
+				if(oLeftDimensions.bottom > oRightDimensions.bottom) {
+					iHeight = oLeftDimensions.height - 2 + (oLeftDimensions.top - oRightDimensions.top);
+					$('home-news').setStyle('height', iHeight - 38);
+				}else if(oRightDimensions.bottom > oLeftDimensions.bottom) {
+					iHeight = oRightDimensions.height - 2 + (oRightDimensions.top - oLeftDimensions.top);
+					oActivities.setStyle('height', iHeight - 28);
+				}
+			}
+		</script>
+		<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10111752-1', '');
+	ga('require', 'linkid', 'linkid.js');
+	ga('send', 'pageview');
+</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div class="container">
+					<h1><a href="http://www.pass.be/" id="logo"><span>Le PASS, tout un monde d’expériences !</span></a></h1>
+					<div id="top-box">
+						<ul id="top-nav">
+	<li class="first"><a id="connexion" href="#">Se connecter</a><div id="connexionBox"><form method="post" action="#">
+	<div>
+		<input type="text" name="webuser_sLogin" id="webuser_sLogin" class="clear-input" value="Email" title="Email" />
+		<input type="password" name="webuser_sPassword" id="webuser_sPassword" class="clear-input" value="Mot de passe" title="Mot de passe" />
+		<input type="submit" value="go" class="submit-connect" />
+	</div>
+</form>
+	<a href="http://www.pass.be/creer-un-compte.htm?lng=fr">Créer un compte</a>
+<a id="forgottenPassword" href="#">Mot de passe oublié</a></div></li><li class=""><a href="http://www.pass.be/contacts.htm?lng=fr" id="topnav-element-1">Contact</a></li><li class=""><a href="http://www.pass.be/a-propos-du-pass/newsletter.htm?lng=fr" id="topnav-element-2">Newsletter</a></li><li class="last "><a href="http://www.pass.be/jobs.htm?lng=fr" id="topnav-element-3">Jobs</a></li></ul>
+						<ul id="lng-nav">
+	<li class="current"><a href="http://www.pass.be/le-pass.htm?lng=fr">FR </a></li><li class=""><a href="http://www.pass.be/het-pass.htm?lng=nl">NL </a></li><li class=" last"><a href="http://www.pass.be/le-pass.htm?lng=en">EN </a></li></ul>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					<script type="text/javascript">
+	//<!--
+		window.addEvent('domready', function() {
+			$('search_sQuery').addEvents({
+				'focus': function() {
+					if(this.value == 'Chercher dans le site') {
+						this.value = '';
+					}
+				},
+				'blur': function() {
+					if(this.value == '') {
+						this.value = 'Chercher dans le site';
+					}
+				}
+			});
+		});
+	//-->
+</script>
+<form method="post" id="search" action="http://www.pass.be/formulaire-de-recherche.htm?lng=fr">
+	<div>
+		<input type="text" name="search_sQuery" id="search_sQuery" class="search-input" value="Chercher dans le site" />
+		<input type="submit" value="Rechercher" class="arrow-btn" />
+	</div>
+</form>
+					<div class="clear"></div>
+					<ul id="nav">
+	<li class="first current" ><a href="http://www.pass.be/le-pass.htm?lng=fr">Le Pass</a></li><li class=" super-menu" id="menu-who" ><a href="http://www.pass.be/je-suis.htm?lng=fr">Je suis</a><ul id="who-menu"><li class="first"><a href="http://www.pass.be/je-suis/une-famille-un-individuel.htm?lng=fr"><strong>Une famille</strong><img src="http://www.pass.be/files/bibliotheque/publics-cible/expo-corps-pass.jpg?thumb=12" alt="Famille" title="Famille" /><span class="overlay"></span><span class="cache"></span></a></li><li class=""><a href="http://www.pass.be/je-suis/une-ecole.htm?lng=fr"><strong>Une &eacute;cole</strong><img src="http://www.pass.be/files/bibliotheque/publics-cible/atelier-creer-son-film-d-animation.jpg?thumb=12" alt="Ecoles" title="Ecoles" /><span class="overlay"></span><span class="cache"></span></a></li><li class=""><a href="http://www.pass.be/je-suis/un-groupe.htm?lng=fr"><strong>Un groupe</strong><img src="http://www.pass.be/files/bibliotheque/publics-cible/groupe-terril-s-brison.jpg?thumb=12" alt="Groupes" title="Groupes" /><span class="overlay"></span><span class="cache"></span></a></li><li class=""><a href="http://www.pass.be/je-suis/une-entreprise.htm?lng=fr"><strong>Une entreprise</strong><img src="http://www.pass.be/files/bibliotheque/publics-cible/fw2f6420.jpg?thumb=12" alt="Entreprises" title="Entreprises" /><span class="overlay"></span><span class="cache"></span></a></li></ul></li><li class=" super-menu" id="menu-activity" ><a href="http://www.pass.be/activites.htm?lng=fr">Activit&eacute;s</a><ul id="activity-menu"><li class="purple first"><a href="http://www.pass.be/activites/animations-1.htm?lng=fr"><strong>Animations</strong><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/animations/energie/f0382144.jpg?thumb=12" alt="animation Energie" title="animation Energie" /><span class="overlay"></span><span class="cache"></span></a></li><li class="blue"><a href="http://www.pass.be/activites/expositions-1.htm?lng=fr"><strong>Expositions</strong><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/monsieur-machine/img-1775-copie-jpg.jpg?thumb=12" alt="Exposition Monsieur Machine" title="Exposition Monsieur Machine" /><span class="overlay"></span><span class="cache"></span></a></li><li class="pink"><a href="http://www.pass.be/activites/films-1.htm?lng=fr"><strong>Films</strong><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/films/le-futur-a-t-il-avenir/le-futur-a-t-il-un-avenir-pdi.jpg?thumb=12" alt="Le futur a-t-il un avenir? Film du Palais des images." title="Le futur a-t-il un avenir? Film du Palais des images." /><span class="overlay"></span><span class="cache"></span></a></li><li class="green"><a href="http://www.pass.be/activites/jardin-1.htm?lng=fr"><strong>Jardin</strong><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/jardin/observatoires/biodiversite-lh-jpg.jpg?thumb=12" alt="L'observatoire de la biodiversité" title="L'observatoire de la biodiversité" /><span class="overlay"></span><span class="cache"></span></a></li></ul></li><li class="" ><a href="http://www.pass.be/le-lieu.htm?lng=fr">Le lieu</a><ul class="submenu"><li><a href="http://www.pass.be/le-lieu/presentation.htm?lng=fr" class="first"><strong>Pr&eacute;sentation</strong></a></li><li><a href="http://www.pass.be/le-lieu/les-espaces.htm?lng=fr" class=""><strong>Les espaces</strong></a></li><li><a href="http://www.pass.be/le-lieu/l-architecture.htm?lng=fr" class=""><strong>L'architecture</strong></a></li><li><a href="http://www.pass.be/le-lieu/l-histoire-du-site.htm?lng=fr" class=""><strong>L'histoire du site</strong></a></li><li><a href="http://www.pass.be/le-lieu/contexte-institutionnel.htm?lng=fr" class="last"><strong>Contexte institutionnel</strong></a></li></ul></li><li class="" ><a href="http://www.pass.be/pratique.htm?lng=fr">Infos pratiques</a><ul class="submenu"><li><a href="http://www.pass.be/pratique/plan-d-acces.htm?lng=fr" class=""><strong>Plan d'acc&egrave;s</strong></a></li><li><a href="http://www.pass.be/pratique/horaires.htm?lng=fr" class="last"><strong>Horaires</strong></a></li><li><a href="http://www.pass.be/pratique/prix.htm?lng=fr" class=""><strong>Tarifs</strong></a></li><li><a href="http://www.pass.be/pratique/services.htm?lng=fr" class=""><strong>Services</strong></a></li><li><a href="http://www.pass.be/pratique/reservations.htm?lng=fr" class=""><strong>R&eacute;servations</strong></a></li><li><a href="http://www.pass.be/pratique/sejours-decouvertes-mons.htm?lng=fr" class=""><strong>SEJOURS &amp; DECOUVERTES</strong></a></li><li><a href="http://www.pass.be/pratique/formulaire-de-retractation-1.htm?lng=fr" class=""><strong> Formulaire de r&eacute;tractation</strong></a></li></ul></li><li class="" ><a href="http://www.pass.be/acheter-tickets-entree-au-pass.htm?lng=fr">Tickets</a></li><li class="" ><a href="http://www.pass.be/video.htm?lng=fr">Vid&eacute;os</a></li></ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div id="content">
+				<div id="content-container" class="container">
+					<div class="indexleft-column">
+						<script type="text/javascript">
+	//<!--
+		window.addEvent('domready', function() {
+			dogSlider('home-slider', '.slide', true, true, true, 6000, 'Afficher le slide', true, 'Slide précédent', 'Slide suivant');
+		});
+	//-->
+</script>
+<!--SLIDE-->
+<div class="slider" id="home-slider">
+	<div id="home-slider-container" class="slider-container">
+		<!--slide-->
+					<div class="slide" id="home-slider_0">
+				<h2 class="slide-title">
+					<a href="">
+						FERMETURE ANNUELLE					</a>
+				</h2>
+				<a class="slide-thumb" href=""><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/energie/7m8b3407-web.jpg?thumb=10" alt="FERMETURE ANNUELLE" class="thumb" /></a>
+									<div class="slide-description">
+						<div class="slide-desc-content">
+															<h3>Rendez-vous le 15 janvier 2018 !</h3>
+							Le Pass sera ferm&eacute; du 08 au 14 janvier 2018.<br />
+Le service r&eacute;servation reste joignable de 8h30 &agrave; 17h00.						</div>
+					</div>
+							</div>
+					<div class="slide" id="home-slider_1">
+				<h2 class="slide-title">
+					<a href="http://www.pass.be/je-suis/une-ecole/les-explo-acteurs-1/sante-microbes-et-cie.htm?lng=fr">
+						Sant&eacute;, microbes &amp; cie					</a>
+				</h2>
+				<a class="slide-thumb" href="http://www.pass.be/je-suis/une-ecole/les-explo-acteurs-1/sante-microbes-et-cie.htm?lng=fr"><img src="http://www.pass.be/files/bibliotheque/4-sliders-homepage/mg-9649-10-694-373.png" alt="Sant&eacute;, microbes &amp; cie" class="thumb" /></a>
+									<div class="slide-description">
+						<div class="slide-desc-content">
+															<h3>SEMAINE THÉMATIQUE : les 22, 23, 25 ou 26.01.2018. </h3>
+							Journ&eacute;es sp&eacute;ciales destin&eacute;es aux &eacute;l&egrave;ves de la 1&egrave;re &agrave; la 4&egrave;me secondaire.<br />
+R&eacute;flexion et exp&eacute;riences ludiques autour des sciences de la vie.						</div>
+					</div>
+							</div>
+					<div class="slide" id="home-slider_2">
+				<h2 class="slide-title">
+					<a href="http://www.pass.be/activites/expositions-1/lab-expo-chimie-et-sciences-de-la-vie.htm?lng=fr">
+						Lab'Expo Chimie					</a>
+				</h2>
+				<a class="slide-thumb" href="http://www.pass.be/activites/expositions-1/lab-expo-chimie-et-sciences-de-la-vie.htm?lng=fr"><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/lab-expo-chimie/552a7543.jpg?thumb=10" alt="Lab'Expo Chimie" class="thumb" /></a>
+									<div class="slide-description">
+						<div class="slide-desc-content">
+															<h3>Venez tenter l'expérience !</h3>
+							La chimie et les sciences de la vie ont un nouvel espace au Pass!<br />
+Un lieu d'exp&eacute;riences et de d&eacute;couvertes actives pour apprendre en s'amusant!						</div>
+					</div>
+							</div>
+					<div class="slide" id="home-slider_3">
+				<h2 class="slide-title">
+					<a href="http://www.pass.be/activites/expositions-1/metamorphoses.htm?lng=fr">
+						METAMORPHOSES					</a>
+				</h2>
+				<a class="slide-thumb" href="http://www.pass.be/activites/expositions-1/metamorphoses.htm?lng=fr"><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/metamorphoses/img-0148-jpg.jpg?thumb=10" alt="METAMORPHOSES" class="thumb" /></a>
+									<div class="slide-description">
+						<div class="slide-desc-content">
+							D&eacute;couvrez METAmorphoses, un espace des possibles o&ugrave; bouillonnent des id&eacute;es pour r&eacute;inventer le monde.						</div>
+					</div>
+							</div>
+					<div class="slide" id="home-slider_4">
+				<h2 class="slide-title">
+					<a href="http://www.pass.be/acheter-tickets-entree-au-pass.htm?lng=fr">
+						TARIFS REDUITS					</a>
+				</h2>
+				<a class="slide-thumb" href="http://www.pass.be/acheter-tickets-entree-au-pass.htm?lng=fr"><img src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/slider/slider-site-web-jeuete2014-fr-02.jpg?thumb=10" alt="TARIFS REDUITS" class="thumb" /></a>
+									<div class="slide-description">
+						<div class="slide-desc-content">
+															<h3>Achetez malin, achetez en ligne !</h3>
+							B&eacute;n&eacute;ficiez d'un tarif r&eacute;duit en achetant vos tickets directement sur le site.						</div>
+					</div>
+							</div>
+				<div id="home-slider-bottom"></div>
+	</div>
+</div> 
+<!--end SLIDE-->
+							<script type="text/javascript">
+		window.addEvent('domready', function() {
+			$$('.home-activities .article-wrapper').addEvent('click', function(e) {
+				if(e && e.preventDefault) e.preventDefault();
+
+				var link = this.getElement('.icon-more');
+
+				if(link) {
+					document.location.href = link.href;
+				}
+
+				return false;
+			});
+		});
+	</script>
+
+	<div class="tabs" id="home-activities">
+		<div class="tabs-control" style="display:block">
+			<ul>
+									<li class="current purple">
+													<span>
+						Animations							</span>
+											</li>
+										<li class="blue">
+													<a href="#" rel="family-2">
+						Expositions							</a>
+											</li>
+										<li class="pink">
+													<a href="#" rel="family-3">
+						Films							</a>
+											</li>
+										<li class="green">
+													<a href="#" rel="family-4">
+						Jardin							</a>
+											</li>
+								</ul>
+			<div class="clear"></div>
+		</div>
+					<div class="box bar-top no-margin" style="display:block;">
+				<div class="bar purple"></div>
+				<div class="box-container home-activities">
+					<div class="box-content index" id="family-1">
+						<h2 class="hidden">Animations</h2>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture first-activity-picture">
+										<a href="http://www.pass.be/activites/animations-1/activites-pour-les-familles.htm?lng=fr">
+											<img alt="la fabrique &agrave; pixels" title="la fabrique &agrave; pixels" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/waouh-zone/m8b1659.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate first-article">
+									<h3><a href="http://www.pass.be/activites/animations-1/activites-pour-les-familles.htm?lng=fr" class="purple">A d&eacute;couvrir : les activit&eacute;s pour les familles</a></h3>
+									<p>
+										Au fil des expositions ou dans les ateliers, les animateurs vous proposent de vivre des activit&eacute;s pour tous les &acirc;ges. Pas besoin de s'inscrire. Guettez les horaires sur les diff&eacute;rents &eacute;crans du Pass.<br />En famille. Durant les vacances scolaires et les week-ends d'ouverture.										<a class="icon-more" href="http://www.pass.be/activites/animations-1/activites-pour-les-familles.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/animations-1/autour-des-maths.htm?lng=fr">
+											<img alt="Les maths en jouant" title="Les maths en jouant" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/animations/maison-des-maths/dsc05488-jpg.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/animations-1/autour-des-maths.htm?lng=fr" class="purple">Autour des maths</a></h3>
+									<p>
+										Cette ann&eacute;e, le Pass et la Maison des maths s'associent pour proposer de nouvelles d&eacute;couvertes aux classes du secondaire.										<a class="icon-more" href="http://www.pass.be/activites/animations-1/autour-des-maths.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/animations-1/ordi-etrange-animal-numerique.htm?lng=fr">
+											<img alt="Ordi &eacute;trange animal num&eacute;rique" title="Ordi &eacute;trange animal num&eacute;rique" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/animations/p3-p6/img-7993.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/animations-1/ordi-etrange-animal-numerique.htm?lng=fr" class="purple">Ordi, &eacute;trange animal num&eacute;rique</a></h3>
+									<p>
+										Qu'y a-t-il derri&egrave;re l'&eacute;cran de mon ordinateur ? Quel langage comprend-il ?										<a class="icon-more" href="http://www.pass.be/activites/animations-1/ordi-etrange-animal-numerique.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+												<p class="text-right no-margin home-activity-button">
+							<a class="button" href="http://www.pass.be/activites/animations-1.htm?lng=fr"><span>Toutes les animations</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+						<div class="box bar-top no-margin" style="display:none;">
+				<div class="bar blue"></div>
+				<div class="box-container home-activities">
+					<div class="box-content index" id="family-2">
+						<h2 class="hidden">Expositions</h2>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture first-activity-picture">
+										<a href="http://www.pass.be/activites/expositions-1/acro-bat.htm?lng=fr">
+											<img alt="Acro'b&acirc;t!" title="Acro'b&acirc;t!" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/expositions/acrobat-02-sergebrison-20-light.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate first-article">
+									<h3><a href="http://www.pass.be/activites/expositions-1/acro-bat.htm?lng=fr" class="blue">Acro'b&acirc;t!</a></h3>
+									<p>
+										Ponts de singe, toboggans et balan&ccedil;oires : un parcours acrobatique incroyable pour relier les expos du Pass'&acirc;ge des Aventuriers!										<a class="icon-more" href="http://www.pass.be/activites/expositions-1/acro-bat.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/expositions-1/la-waouh-zone.htm?lng=fr">
+											<img alt="SOBOS - Chevalvert" title="SOBOS - Chevalvert" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/waouh-zone/m8b0583.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/expositions-1/la-waouh-zone.htm?lng=fr" class="blue">La Waouh Zone </a></h3>
+									<p>
+										Plongez dans l'univers du num&eacute;rique en dialoguant avec 5 &oelig;uvres interactives pleines de po&eacute;sie, puis prenez les technologies en main dans la Fabrique &agrave; pixels : on est tous des makers! <br />D&egrave;s le 1er avril.										<a class="icon-more" href="http://www.pass.be/activites/expositions-1/la-waouh-zone.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/expositions-1/le-quartier-archi-chouette.htm?lng=fr">
+											<img alt="Le quartier archi-chouette" title="Le quartier archi-chouette" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/expositions/7m8b0103-copie.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/expositions-1/le-quartier-archi-chouette.htm?lng=fr" class="blue">Le quartier archi-chouette</a></h3>
+									<p>
+										Comme c'est curieux, une ville vue de haut ou d'en bas! Et si on l'am&eacute;nageait comme il nous pla&icirc;t ? <br />C'est dans cet espace que les 3-7 ans peuvent &eacute;galement construire &quot;la cabane inachev&eacute;e&quot;.<br />Exposition du Pass'&acirc;ge des D&eacute;couvreurs.										<a class="icon-more" href="http://www.pass.be/activites/expositions-1/le-quartier-archi-chouette.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+												<p class="text-right no-margin home-activity-button">
+							<a class="button" href="http://www.pass.be/activites/expositions-1.htm?lng=fr"><span>Toutes les expositions</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+						<div class="box bar-top no-margin" style="display:none;">
+				<div class="bar pink"></div>
+				<div class="box-container home-activities">
+					<div class="box-content index" id="family-3">
+						<h2 class="hidden">Films</h2>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture first-activity-picture">
+										<a href="http://www.pass.be/activites/films-1/ensemble.htm?lng=fr">
+											<img alt="Ensemble, le film" title="Ensemble, le film" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/films/ensemble/ensemble.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate first-article">
+									<h3><a href="http://www.pass.be/activites/films-1/ensemble.htm?lng=fr" class="pink">Ensemble!</a></h3>
+									<p>
+										Film r&eacute;solument positif, Ensemble! donne &agrave; voir une mosa&iuml;que d'initiatives innovantes, cr&eacute;atives et durables, loin du fatalisme ambiant.										<a class="icon-more" href="http://www.pass.be/activites/films-1/ensemble.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/films-1/h20-1.htm?lng=fr">
+											<img alt="H2O! Le film" title="H2O! Le film" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/films/5-3-2-6-7-web.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/films-1/h20-1.htm?lng=fr" class="pink">H2O! </a></h3>
+									<p>
+										Immersion dans l'image, mais aussi immersion virtuelle dans le milieu aquatique, pour des séquences saisissantes bénéficiant de la technologie 3D.   
+ Un voyage pour mieux comprendre les enjeux de l'accès à l'eau à...										<a class="icon-more" href="http://www.pass.be/activites/films-1/h20-1.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+												<p class="text-right no-margin home-activity-button">
+							<a class="button" href="http://www.pass.be/activites/films-1.htm?lng=fr"><span>Tous les films</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+						<div class="box bar-top no-margin" style="display:none;">
+				<div class="bar green"></div>
+				<div class="box-container home-activities">
+					<div class="box-content index" id="family-4">
+						<h2 class="hidden">Jardin</h2>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture first-activity-picture">
+										<a href="http://www.pass.be/activites/jardin-1/la-plaine-de-jeu.htm?lng=fr">
+											<img alt="La plaine de jeux" title="La plaine de jeux" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/jardin/a-la-plaine-de-jeux-web.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate first-article">
+									<h3><a href="http://www.pass.be/activites/jardin-1/la-plaine-de-jeu.htm?lng=fr" class="green">La plaine de jeux</a></h3>
+									<p>
+										Au coeur du site du Pass, juste à côté de la terrasse et du Café 21 qui vous propose une petite restauration de qualité à des prix abordables.  
+ Les enfants profitent de l'extérieur en s'amusant sur les jeux de la...										<a class="icon-more" href="http://www.pass.be/activites/jardin-1/la-plaine-de-jeu.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/jardin-1/observatoire-de-la-mare.htm?lng=fr">
+											<img alt="Observatoire de la mare" title="Observatoire de la mare" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/jardin/sany1485-web.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/jardin-1/observatoire-de-la-mare.htm?lng=fr" class="green">Observatoire de la mare</a></h3>
+									<p>
+										La mare est un milieu de vie riche et varié. L'abondance des formes de vie présentes dépasse largement celles des autres milieux aquatiques.  
+ Partez à la découverte de l'écosystème de la mare. A l'aide de...										<a class="icon-more" href="http://www.pass.be/activites/jardin-1/observatoire-de-la-mare.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/jardin-1/station-meteo.htm?lng=fr">
+											<img alt="Station m&eacute;t&eacute;o" title="Station m&eacute;t&eacute;o" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/jardin/5-3-2-7-3-web.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/jardin-1/station-meteo.htm?lng=fr" class="green">Station m&eacute;t&eacute;o</a></h3>
+									<p>
+										Pour comprendre ce qui se cache derrière le bulletin de "Monsieur météo". Pluie, soleil, vent, gel... Mais quel temps fera–t–il demain?  
+ Sur cet observatoire, partez à la découverte des instruments...										<a class="icon-more" href="http://www.pass.be/activites/jardin-1/station-meteo.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+													<div class="article-wrapper">
+																	
+									<div class="activity-picture">
+										<a href="http://www.pass.be/activites/jardin-1/terril.htm?lng=fr">
+											<img alt="Terril" title="Terril" src="http://www.pass.be/files/bibliotheque/2-photos-listings-activites/jardin/pass-054-light.jpg?thumb=8" />
+										</a>
+									</div>
+																<div class="article separate">
+									<h3><a href="http://www.pass.be/activites/jardin-1/terril.htm?lng=fr" class="green">Terril</a></h3>
+									<p>
+										Partez en balade &agrave; la d&eacute;couverte de cet &eacute;cosyst&egrave;me tr&egrave;s particulier qui s'est d&eacute;velopp&eacute; en quelques d&eacute;cennies sur ce &quot;tas de cailloux&quot; n&eacute; de l'exploitation du charbon.										<a class="icon-more" href="http://www.pass.be/activites/jardin-1/terril.htm?lng=fr">En savoir plus</a>
+									</p>
+								</div>
+								<div class="clear"></div>
+							</div>
+												<p class="text-right no-margin home-activity-button">
+							<a class="button" href="http://www.pass.be/activites/jardin-1.htm?lng=fr"><span>Toutes les activités</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+				</div>
+
+					</div>
+					<div class="indexright-column">
+						<div class="box">
+							<div class="box-container" id="home-content">
+								<div class="box-content delimited-height">
+									<div class="article no-separate">
+											<h2>Tout un monde d'expériences!</h2><p>Des expositions ludiques et interactives, des animations pour petits et grands, un Palais des images et un jardin de 28ha à explorer en famille, avec l'école ou en groupe :<br /> <strong>c’est ça le Pass</strong>! </p>
+									</div>
+								</div>
+							</div>
+						</div>
+							<div id="submenu">
+		<h2>Je suis...</h2>
+		<ul>
+							<li class="first "><a href="http://www.pass.be/je-suis/une-famille-un-individuel.htm?lng=fr"><strong>Une famille</strong></a></li>
+							<li class=""><a href="http://www.pass.be/je-suis/une-ecole.htm?lng=fr"><strong>Une &eacute;cole</strong></a></li>
+							<li class=""><a href="http://www.pass.be/je-suis/un-groupe.htm?lng=fr"><strong>Un groupe</strong></a></li>
+							<li class="last "><a href="http://www.pass.be/je-suis/une-entreprise.htm?lng=fr"><strong>Une entreprise</strong></a></li>
+					</ul>
+	</div>
+
+						<div class="call-to-actions">
+			<p>
+			<a href="http://www.pass.be/pratique/horaires.htm?lng=fr" class="red-button">
+				Voir les horaires			</a>
+		</p>
+			<p>
+			<a href="http://blog.pass.be/" class="red-button">
+				Le blog du Pass			</a>
+		</p>
+			<p>
+			<a href="http://www.pass.be/rejoignez-nous-sur-le-web.htm?lng=fr" class="red-button">
+				Votre avis			</a>
+		</p>
+	</div>
+							<div class="box expo-box">
+		<div class="box-container box-content" id="home-news">
+			<div class="box-title">
+				<h2>News</h2>
+			</div>
+							<div class="article separate">
+					<div class="content-article">
+						<h4><a href="http://www.pass.be/actualites/nouveaute-le-lab-expo.htm?lng=fr">D&eacute;couvrez le monde de la chimie </a></h4>
+						<p>22.09.2017</p>
+					</div>
+											<div class="thumb-article">
+							<a href="http://www.pass.be/actualites/nouveaute-le-lab-expo.htm?lng=fr">
+								<img alt="" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/expositions/lab-expo-chimie/slider-chimie.png?thumb=9" />
+								<span>En savoir plus</span>
+							</a>
+						</div>
+										<div class="clear"></div>
+				</div>
+							<div class="article separate">
+					<div class="content-article">
+						<h4><a href="http://www.pass.be/actualites/bientot-la-rentree-1.htm?lng=fr">Feuilletez la brochure scolaire</a></h4>
+						<p>23.08.2017</p>
+					</div>
+											<div class="thumb-article">
+							<a href="http://www.pass.be/actualites/bientot-la-rentree-1.htm?lng=fr">
+								<img alt="" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/animations/air-de-rien/air-et-eau-pt-248-ok.jpg?thumb=9" />
+								<span>En savoir plus</span>
+							</a>
+						</div>
+										<div class="clear"></div>
+				</div>
+							<div class="article separate">
+					<div class="content-article">
+						<h4><a href="http://www.pass.be/actualites/le-pass-destination-de-choix-pour-les-groupes-jeunesse.htm?lng=fr">Le Pass, destination de choix pour les groupes jeunesse</a></h4>
+						<p>24.05.2017</p>
+					</div>
+											<div class="thumb-article">
+							<a href="http://www.pass.be/actualites/le-pass-destination-de-choix-pour-les-groupes-jeunesse.htm?lng=fr">
+								<img alt="" src="http://www.pass.be/files/bibliotheque/1-images-photos-pages-contenus-du-site/animations/terril/img-8567-jpg.jpg?thumb=9" />
+								<span>En savoir plus</span>
+							</a>
+						</div>
+										<div class="clear"></div>
+				</div>
+						<p class="text-right article">
+				<a class="button" href="http://www.pass.be/actualites.htm?lng=fr"><span>Toutes les news</span></a>
+			</p>
+		</div>
+	</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+	<div id="footer-container" class="container">
+		<div class="footer-column">
+			<h2>Pratique</h2>
+<ul>
+<li><a href="http://www.pass.be/pratique/plan-d-acces.htm">Plan d'accès</a> &amp; <a href="http://www.pass.be/pratique/horaires.htm">horaires</a></li>
+<li><a href="http://www.pass.be/pratique/prix.htm">Tarifs</a></li>
+<li><a href="http://www.pass.be/pratique/services.htm">Services</a></li>
+<li><a title="Evenements au Pass" href="http://pass-event.be/" target="_blank">Incentives / Location</a></li>
+</ul>
+		</div>
+		<div class="footer-column">
+			<h2>JE SUIS...</h2>
+<ul>
+<li><a href="http://www.pass.be/je-suis/une-famille-un-individuel.htm">Une famille / Un individuel</a></li>
+<li><a href="http://www.pass.be/je-suis/une-ecole.htm">Une école</a></li>
+<li><a href="http://www.pass.be/je-suis/un-groupe.htm">Un groupe</a></li>
+<li><a title="Evenements au Pass" href="http://pass-event.be/" target="_blank">Une entreprise</a></li>
+</ul>
+		</div>
+		<div class="footer-column">
+			<h2>A propos du pass</h2>
+<ul>
+<li><a href="http://www.pass.be/le-lieu/presentation.htm?lng=fr">Présentation</a></li>
+<li><a href="http://www.pass.be/le-lieu/l-histoire-du-site.htm?lng=fr">Historique du projet</a></li>
+<li><a href="http://www.pass.be/a-propos-du-pass/partenaires.htm?lng=fr">Devenez partenaire du Pass</a></li>
+<li><a href="http://www.pass.be/a-propos-du-pass/presse.htm?lng=fr">Presse</a></li>
+</ul>
+		</div>
+		<div id="social-column" class="footer-column">
+			<h2 class="no-border">Suivez nous !</h2>
+<ul>
+<li>
+<p><a title="Page Facebook du Pass" href="https://www.facebook.com/pages/Le-Pass/115234608513939?ref=bookmarks" target="_blank"><img src="http://www.pass.be/files/bibliotheque/logos-footer-site-web/footer/picto-facebook.jpg" alt="facebook" /></a></p>
+</li>
+<li><a title="Linkedin" href="https://be.linkedin.com/company/pass-parc-d%27aventures-scientifiques"><img src="http://www.pass.be/files/bibliotheque/logos-footer-site-web/footer/social-linkedin.png" alt="Linkedin" /></a></li>
+<li><a title="Google +" href="https://plus.google.com/109007966764300680109/posts"><img src="http://www.pass.be/files/bibliotheque/logos-footer-site-web/footer/social-google.png" alt="Google plus" /></a></li>
+<li><a title="Twitter" href="https://twitter.com/Pass_Frameries" target="_blank"><img src="http://www.pass.be/files/bibliotheque/logos-footer-site-web/footer/picto-twitter.jpg" alt="Twitter" /></a><a title="Google +" href="https://plus.google.com/109007966764300680109/posts"><br /></a></li>
+</ul>
+<h2 class="no-border">Avec le soutien de</h2>
+<ul>
+<li><img style="float: left;" src="http://www.pass.be/files/bibliotheque/logos-footer-site-web/footer/logo-wallonie.jpg" alt="La Wallonie" /></li>
+</ul>
+<p><br /><br /></p>
+<p> </p>
+		</div>
+		
+		<div class="hr">&nbsp;</div>
+		
+		<ul id="footer-nav">
+<li class="first">© 2015 Pass</li>
+<li>Parc d'aventures scientifiques</li>
+<li><a href="http://www.pass.be/a-propos-du-pass/partenaires.htm?lng=fr">Partenaires</a></li>
+<li><a href="http://www.pass.be/footer/informations-legales.htm?lng=fr">Informations légales</a></li>
+<li><a href="http://www.pass.be/footer/charte-de-confidentialite.htm?lng=fr">Charte de Vie privée</a></li>
+<li><a title="accessibilité" href="http://www.pass.be/footer/accessibilite.htm?lng=fr">Accessibilité</a></li>
+<li class="last">E-mail : <a class="mail" href="mailto:pass@pass.be">pass@pass.be</a></li>
+</ul>
+<p id="as-gfx"><a lang="fr" href="http://www.pass.be/5-soleils.htm?lng=fr"><img title="5 soleils" src="http://www.pass.be/files/bibliotheque/ecussons-attractourist-5s.gif" alt="Attraction touristique 5 Soleils" /></a>    <a lang="fr" href="http://label.anysurfer.be/"><img title="Ce site web est conforme à la liste de directives AnySurfer pour les sites web accessibles" src="http://www.pass.be/files/bibliotheque/label-anysurfer-40x40-1.png" alt="AnySurfer, label de qualité belge pour les sites web accessibles" /></a></p>
+		
+		<div class="clear">&nbsp;</div>
+	</div>
+</div>
+
+
+
+		<div class="popup" style="display:none">
+	<div class="popup-bg"></div>
+	<div id="forgottenPasswordBox">
+		<div class="success-message messages"><div class="confirm">Un nouveau mot de passe vous a été envoyé par e-mail</div></div>
+<div class="error-message messages"><div class="error">Votre identifiant n'a pas été trouvé</div></div>
+<form method="post" action="http://www.pass.be/service/session/lostpassword?lng=fr" id="password-form">
+	<div class="float-left">
+		<input type="text" name="forgottenpassword_sEmail" value="Identifiant" />
+	</div>
+	<div class="float-right">
+		<input class="button" type="submit" value="Réinitialiser le mot de passe" />
+	</div>
+	<div class="clear"></div>
+</form>
+<br />
+<a class="closeBox">Annuler</a>
+	</div>
+</div>
+<div class="popup" style="display:none">
+	<div class="popup-bg"></div>
+	<div id="newsletterBox" class="popup-container">
+		<form method="post" action="http://www.pass.be/service/campaign/addNewsletter?lng=fr">
+	<h2>S'inscrire à la newsletter</h2>
+	<div class="messages error-message">
+		<div class="error">
+			<p>error-message</p>
+		</div>
+	</div>
+	<div class="messages success-message">
+		<div class="confirm">
+			<p>Votre inscription a été enregistrée avec succès.</p>
+		</div>
+	</div>
+	<div class="form-content">
+		<div class="field float-left">
+			<label for="Newsletter_sFirstName-input" class="block">Votre prénom</label>
+			<input type="text" name="Newsletter_sFirstName" id="Newsletter_sFirstName-input" class="clear-input" />
+		</div>
+		<div class="field float-right">
+			<label for="Newsletter_sLastName-input" class="block">Votre nom de famille</label>
+			<input type="text" id="Newsletter_sLastName-input" name="Newsletter_sLastName" class="clear-input" />
+		</div>
+		<div class="clear"></div>
+		<div class="field newsletter-comment" aria-hidden="true">
+			<label for="Newsletter_sComment" class="block">Veuillez laisser ce champs vide</label>
+			<input type="text" id="Newsletter_sComment" name="Newsletter_sComment" class="clear-input" />
+		</div>
+		<div class="field">
+			<label for="Newsletter_sEmail-input" class="block">Votre adresse e-mail</label>
+			<input type="text" name="Newsletter_sEmail" id="Newsletter_sEmail-input" class="clear-input big-input" />
+		</div>
+		<h3>Centre(s) d'intérêt</h3>
+			<div class="field checkbox-field">
+		<label for="Newsletter_bFamilyTopic1">Famille/individuel</label>
+		<input type="checkbox" name="Newsletter_bFamilyTopic" value="1" id="Newsletter_bFamilyTopic1"/>
+			</div>
+	<div class="field checkbox-field">
+		<label for="Newsletter_bSchoolTopic1">École</label>
+		<input type="checkbox" name="Newsletter_bSchoolTopic" value="1" id="Newsletter_bSchoolTopic1"/>
+			</div>
+	<div class="field checkbox-field">
+		<label for="Newsletter_bGroupTopic1">Groupe non scolaire</label>
+		<input type="checkbox" name="Newsletter_bGroupTopic" value="1" id="Newsletter_bGroupTopic1"/>
+			</div>
+	<div class="field checkbox-field">
+		<label for="Newsletter_bEnterpriseTopic1">Espaces de location événementiels</label>
+		<input type="checkbox" name="Newsletter_bEnterpriseTopic" value="1" id="Newsletter_bEnterpriseTopic1"/>
+			</div>
+<div class="clear"></div>		
+		<div>
+			<a class="closeBox" href="#">Annuler</a>
+		</div>
+		<div class="field">
+	<input type="submit" value="M'inscrire" class="button" />
+</div>		<p>&nbsp;</p>
+		<p>
+			<a href="http://www.pass.be/footer/charte-de-vie-privee.htm?lng=fr" target="_blank">
+				Le Pass protège vos données personnelles. Consultez notre charte de la vie privée.			</a>
+		</p>
+	</div>
+</form>
+	</div>
+</div>
+	</body>
+</html>
