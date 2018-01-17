@@ -14,5 +14,8 @@
     "HTTP"
   ],
   "author": "Me",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "es6-promisify": "^5.0.0"
+  }
 }
