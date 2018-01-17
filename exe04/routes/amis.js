@@ -28,5 +28,7 @@ const generateHtml = (tpl,json) =>{
     // let htmlStr = tpl.replace('%friends%',tempStr)
     // console.log(htmlStr)
     // return htmlStr
+    
+    // boucle et retourne tous les .name sous forme d'array
     return tpl.replace('%friends%',JSON.parse(json).map(item =>item.name).join('</li><li>'))
 }
