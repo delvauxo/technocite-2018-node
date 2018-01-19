@@ -1,19 +1,19 @@
 {
-  "name": "exe05",
+  "name": "exe08",
   "version": "0.0.1",
-  "description": "Promises vs callbacks",
-  "main": "server.js",
+  "description": "big exercice",
+  "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "promises",
-    "JS",
-    "nodejs"
+    "express",
+    "exercice"
   ],
   "author": "TCDP",
   "license": "MIT",
   "dependencies": {
-    "es6-promisify": "^5.0.0"
+    "express": "^4.16.2",
+    "express-hbs": "^1.0.4"
   }
 }
