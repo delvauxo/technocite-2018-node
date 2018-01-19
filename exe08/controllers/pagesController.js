@@ -3,5 +3,5 @@ exports.home = (req,res)=>{
 }
 
 exports.about = (req,res)=>{
-    res.render('about',{title:'Ma About Page',test:'ceci est un test'})
+    res.render('about',{title:'Ma About Page',test:'ceci est un test', layout: 'layouts/colors'})
 }
