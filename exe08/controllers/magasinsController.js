@@ -10,7 +10,7 @@ exports.addMagasin = (req, res) => {
     // const magosh = new Magasin({ name: 'My Magosh', slug: 'my-magosh'});
     // magosh.save().then(() => console.log(magosh));
     // res.render('magasins',{title:'Ma home Page',test:'ceci est un test', magasins: magasins})
-    res.render('magasin_edit', {magasin:{}})
+    res.render('magasin_edit', {"magasin":{}})
 }
 
 exports.createMagasin = async (req, res) => {
@@ -20,7 +20,13 @@ exports.createMagasin = async (req, res) => {
 
 exports.getMagasinBySlug = async (req, res) => {
     const magosh = await Magasin.findOne({slug : req.params.slug})
-    res.render('magasin_details', {magasin: magosh})
+    res.render('magasin_details', {"magasin": magosh})
+}
+
+exports.editMagasin = async (req, res) => {
+    const magosh = await Magasin.findOne({_id : req.params.id})
+    if(!magosh) return next()
+    res.render('magasin_edit', {"magasin": magosh})
 }
 
 const multerOptions = {
@@ -48,4 +54,9 @@ exports.resize = async(req, res, next) => {
         await photo.write(`${process.cwd()}/public/uploads/${req.body.img}`)
         next()
     }
+}
+
+exports.updateMagasin = async (req, res) => {
+    const magosh = await Magasin.findByIdAndUpdate({_id : req.params.id}, req.body, {new : true}).exec()
+    res.redirect(`/magasin/${req.body.slug}`)
 }

@@ -1,5 +1,11 @@
-<h2>Add Magasin</h2>
-<form action="/magasins/add" class="card" method="POST" enctype="multipart/form-data">
+<h2>
+    {{#if magasin.name}}
+    Edit Magasin
+    {{else}}
+    Add Magasin
+    {{/if}}
+</h2>
+<form action="/magasins/add/{{magasin._id}}" class="card" method="POST" enctype="multipart/form-data">
     <label for="name">
         Name :
         <input type="text" name="name" id="name" value="{{magasin.name}}">
@@ -12,9 +18,16 @@
         IMG :
         <input type="file" name="img" id="img" accept="image/*" value="{{magasin.img}}">
     </label>
+    {{#if magasin.img}}
+    <img src="/uploads/{{magasin.img}}" width="150" alt="{{magasin.name}}">
+    {{/if}}
     <label for="desc">
         Description :
         <textarea name="desc" id="desc" cols="30" rows="10">{{magasin.desc}}</textarea>
     </label>
-    <input type="submit" value="Ajouter un magasin">
+    {{#if magasin.name}}
+    <input type="submit" value="Modifier un magasin">
+    {{else}}
+    <input type="submit" value="Ajouter le  magasin">
+    {{/if}}
 </form>
