@@ -1,0 +1,19 @@
+{
+  "name": "exe09_googlemapapi",
+  "version": "0.0.1",
+  "description": "NodeJS API Google Map JS JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "JavaScript",
+    "Google",
+    "Map",
+    "API"
+  ],
+  "author": "Me",
+  "license": "MIT"
+}
