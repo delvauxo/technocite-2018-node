@@ -30,7 +30,8 @@ router.post('/magasins/add/:id',
     magasinsController.resize,
     magasinsController.updateMagasin
 )
-// router.post('/magasins/:id/edit', magasinsController.editMagasin)
+// --delete
+router.get('/magasins/:id/delete', magasinsController.deleteMagasin)
 
 // MAGASIN DETAILS
 router.get('/magasin/:slug', magasinsController.getMagasinBySlug)

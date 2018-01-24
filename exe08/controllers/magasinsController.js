@@ -60,3 +60,8 @@ exports.updateMagasin = async (req, res) => {
     const magosh = await Magasin.findByIdAndUpdate({_id : req.params.id}, req.body, {new : true}).exec()
     res.redirect(`/magasin/${req.body.slug}`)
 }
+
+exports.deleteMagasin = async (req, res) => {
+    const magosh = await Magasin.findOneAndRemove({ _id: req.params.id })
+    res.redirect('/')
+}
