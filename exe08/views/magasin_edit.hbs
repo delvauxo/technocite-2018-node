@@ -25,6 +25,18 @@
         Description :
         <textarea name="desc" id="desc" cols="30" rows="10">{{magasin.desc}}</textarea>
     </label>
+    <label for="location[address]">
+        Addresse :
+        <input type="text" name="location[address]" id="address" value="{{magasin.location.address}}">
+    </label>
+    <label for="location[coordinates][0]">
+        Latitude :
+        <input type="text" name="location[coordinates][0]" id="lng" value="{{magasin.location.coordinates.[0]}}">
+    </label>
+    <label for="location[coordinates][1]">
+        Longitude :
+        <input type="text" name="location[coordinates][1]" id="lat" value="{{magasin.location.coordinates.[1]}}">
+    </label>
     {{#if magasin.name}}
     <input type="submit" value="Modifier un magasin">
     {{else}}

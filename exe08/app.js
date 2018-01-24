@@ -3,6 +3,8 @@ const app = express()
 const routes = require(`${process.cwd()}/routes`)
 const hbs = require('express-hbs')
 const bodyParser = require('body-parser')
+const helpers = require(`${process.cwd()}/helpers`)
+const expressValidator = require('express-validator')
 
 //view engine setup
 app.engine('hbs',hbs.express4({
@@ -13,6 +15,10 @@ app.engine('hbs',hbs.express4({
 app.set('view engine','hbs')
 app.set('views',`${__dirname}/views`)
 
+// Initialise le systeme d'helpers pour hbs
+// -- Permet d'utiliser des "fonctions" dans les fichiers .hbs
+helpers.registerHelpers(hbs)
+
 // setup static folder for static rendering on my server side
 app.use(express.static(`${__dirname}/public`))
 
@@ -21,6 +27,14 @@ app.use(express.static(`${__dirname}/public`))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
+// Express-Validator
+// -- avant les routes
+// -- apres body parser
+app.use(expressValidator())
+
+// Routes
 app.use('/',routes)
 
+
 module.exports = app
+

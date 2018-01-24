@@ -1,0 +1,20 @@
+{{!-- 
+form (login) - 
+model (user) - 
+routing -
+controller - 
+table - 
+encryption pwds (npm:passwords) 
+--}}
+
+<form action="/login" class="form" method="POST">
+    <h2>Login</h2>
+    
+    <label for="email">E-mail :</label>
+    <input type="email" name="email" id="email" value="{{users.name}}">
+
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password" value="{{users.password}}">
+    
+    <input type="submit" value="Sign In">
+</form>

@@ -18,9 +18,9 @@ exports.createMagasin = async (req, res) => {
     res.redirect('/')
 }
 
-exports.getMagasinBySlug = async (req, res) => {
+exports.getMagasinBySlug = async (req, res, next) => {
     const magosh = await Magasin.findOne({slug : req.params.slug})
-    res.render('magasin_details', {"magasin": magosh})
+    res.render('magasin_details', {api_key: process.env.API_KEY, "magasin": magosh})
 }
 
 exports.editMagasin = async (req, res) => {

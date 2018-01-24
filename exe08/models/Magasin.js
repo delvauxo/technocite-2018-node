@@ -15,6 +15,22 @@ const schema = new mongoose.Schema({
     desc : {
         type : String,
         required : 'Thanks to set a description !'
+    },
+    location: {
+        type: {
+            type: String,
+            default: 'Point'
+        },
+        coordinates : [
+            {
+                type: Number,
+                required: 'Vous devez entrer des coordonnées'
+            }
+        ],
+        address: {
+            type: String,
+            required: 'Vous devez fournir une adresse'
+        }
     }
 })
 
