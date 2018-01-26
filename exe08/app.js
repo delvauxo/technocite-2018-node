@@ -5,6 +5,14 @@ const hbs = require('express-hbs')
 const bodyParser = require('body-parser')
 const helpers = require(`${process.cwd()}/helpers`)
 const expressValidator = require('express-validator')
+const cookieParser = require('cookie-parser')
+const session = require('express-session')
+const sessionStore = new session.MemoryStore
+const passport = require('passport')
+// const passportLocal = require('passport-local')
+const mongoose = require('mongoose')
+const User = mongoose.model('User')
+
 
 //view engine setup
 app.engine('hbs',hbs.express4({
@@ -32,9 +40,34 @@ app.use(bodyParser.urlencoded({extended: true}))
 // -- apres body parser
 app.use(expressValidator())
 
+// Cookie management
+app.use(cookieParser('secret'))
+
+// Session management
+app.use(session({
+    cookie : {maxAge: 60000},
+    store : sessionStore,
+    saveUninitialized : true,
+    resave : true,
+    secret : 'secret'
+}))
+
+// init passport
+passport.use(User.createStrategy())
+passport.serializeUser(User.serializeUser())
+passport.deserializeUser(User.deserializeUser())
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.use((req, res, next) => {
+    // console.log(req.user)
+    res.locals.user = req.user
+    next()
+}) 
+
 // Routes
 app.use('/',routes)
-
+ 
 
 module.exports = app
 

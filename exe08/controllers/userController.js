@@ -1,3 +1,6 @@
+const mongoose = require ('mongoose')
+const User = mongoose.model('User')
+const promisify = require('es6-promisify')
 
 exports.loginForm = (req, res, next) => {
     res.render('login')
@@ -12,12 +15,12 @@ exports.checkRegister = (req, res, next) => {
     req.checkBody({
         name: {
             notEmpty: true,
-            required: 'Please fill-in your name.'
+            errorMessage: 'Please fill-in your name.'
         },
         email: {
             notEmpty: true,
             isEmail: true,
-            required: 'Please fill-in your e-mail.'
+            errorMessage: 'Please fill-in your e-mail.'
         },
         password: {
             notEmpty: true,
@@ -30,8 +33,28 @@ exports.checkRegister = (req, res, next) => {
     })
     req.checkBody('password-confirm', 'Your password is not equal with your password confirmation').equals(req.body.password)
     console.log(req.body)
+
+    const errors = req.validationErrors()
+
+    if(errors) {
+        res.render('register', {'user': req.body, 'errors': errors})
+    } else {
+        next()
+    }
+
 }
 
-exports.register = (req, res, next) => {
-    res.render('register')
+exports.register = async (req, res, next) => {
+    const user = await new User({email : req.body.email, name : req.body.name})
+    const register = promisify(User.register, User)
+    try {
+        await register(user, req.body.password)
+    } catch (e) {
+        console.log(e)
+    }
+    next()
+}
+
+exports.registerAfter = (req, res) => {
+    res.redirect('/')
 }
