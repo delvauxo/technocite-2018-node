@@ -1,11 +1,13 @@
+const mongoose = require('mongoose')
+const User = mongoose.model('User')
 
 exports.loginForm = (req, res, next) => {
     res.render('login')
 }
 
-exports.registerForm = (req, res) => {
-    res.render('register')
-}
+// exports.registerForm = (req, res) => {
+//     res.render('register')
+// }
 
 exports.checkRegister = (req, res, next) => {
     req.sanitizeBody('name')
@@ -32,6 +34,11 @@ exports.checkRegister = (req, res, next) => {
     console.log(req.body)
 }
 
-exports.register = (req, res, next) => {
-    res.render('register')
+exports.addUser = (req, res) => {
+    res.render('register', {"user":{}})
+}
+
+exports.createUser = async (req, res) => {
+    const user = await new User(req.body).save()
+    res.redirect('../login')
 }

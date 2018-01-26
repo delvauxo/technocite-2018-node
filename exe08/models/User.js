@@ -1,3 +1,4 @@
+// MODEL
 const mongoose = require('mongoose')
 const passportLocalMongoose = require('passport-local-mongoose')
 const validator = require('validator')
@@ -15,6 +16,11 @@ const schema = new mongoose.Schema({
         type: String,
         trim: true,
         required: 'Please fill-in your Name !'
+    },
+    password: {
+        type: String,
+        trim: true,
+        required: 'Please fill-in your password !'
     }
 })
 

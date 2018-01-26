@@ -27,11 +27,6 @@ app.use(express.static(`${__dirname}/public`))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-// Express-Validator
-// -- avant les routes
-// -- apres body parser
-app.use(expressValidator())
-
 // Routes
 app.use('/',routes)
 

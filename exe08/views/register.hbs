@@ -1,7 +1,8 @@
 {{#each errors as |error|}}
 Error : {{error.msg}}<br />
 {{/each}}
-<form action="/register" class="form" method="POST">
+
+<form action="/register/add" class="form" method="POST">
     <h2>Register</h2>
 
     <label for="name">Name :</label>
@@ -14,7 +15,7 @@ Error : {{error.msg}}<br />
     <input type="password" name="password" id="password" value="{{user.password}}">
 
     <label for="password-confirm">Confirm password:</label>
-    <input type="password" name="password-confirm" id="password-confirm" value="{{user.password-confrim}}">
+    <input type="password" name="password-confirm" id="password-confirm" value="{{user.password-confirm}}">
 
-    <input type="button" value="Sign Up">
+    <input type="submit" value="Sign Up">
 </form>
