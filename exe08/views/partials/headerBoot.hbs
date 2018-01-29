@@ -25,8 +25,14 @@
              --><li>
                     <a href="/login">Login</a>
                 </li>{{#if user.name}}<!--
-             --><li>
-                    <a href="/logout">Logout {{user.name}}</a>
+             --><li id="nav-profile">
+                    <a href="/logout">Welcome {{user.name}}<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a href="/logout">Logout</a></li>
+                        <li>bla</li>
+                        <li>bli</li>
+                        <li>blo</li>
+                    </ul>
                 </li>
                 {{/if}}
             </ul>

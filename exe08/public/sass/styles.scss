@@ -469,6 +469,29 @@ header {
                   &:not(:last-child) a {
                     border-right: 1px solid black;
                   }
+
+                }
+
+                #nav-profile {
+                  // background-color: cyan;
+                  
+                  a {
+                    // background-color: yellow;
+
+                    i {
+                      margin-left: 15px;
+                    }
+                  }
+
+                  ul {
+                    display: none;
+                    background-color: red;
+
+                    li {
+                      list-style: none;
+                      background-color: pink;
+                    }
+                  }
                 }
                 
                 &:last-of-type {
@@ -480,7 +503,7 @@ header {
     }
 }
 
-// ABOUT PAGE
+// MAGASINS PAGE
 
 #magasins {
   margin-bottom: 50px;
@@ -564,11 +587,28 @@ header {
               width: 25%;
               height: 1px;
               background-color: darken(#eee, 20%);
+              transition: all 0.3s ease-out;
             }
             
             p {
               text-align: center;
               padding: 15px;
+            }
+
+            button {
+              display: block;
+              margin: 0 auto 25px auto;
+              padding: 10px 15px;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: white;
+              background-color: $orangeItnb;
+              border: 0px solid darken($orangeItnb, 10%);
+              transition: all 0.3s ease-out;
+
+              &:hover {
+                background-color: darken($orangeItnb, 10%);
+              }
             }
 
             &:after {
@@ -577,6 +617,10 @@ header {
               background: #d5d5d5;
               height: 3px;
               width: 100%; 
+            }
+
+            &:hover div {
+              background-color: darken($orangeItnb, 10%);
             }
           }
 
