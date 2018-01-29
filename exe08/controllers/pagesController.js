@@ -13,5 +13,5 @@ exports.home = async (req, res) => {
 }
 
 exports.about = (req,res)=>{
-    res.render('about',{title:'Ma About Page',test:'ceci est un testz', layout: 'layouts/colors'})
+    res.render('about',{title:'Ma About Page',test:'ceci est un testz', layout: 'layouts/twist'})
 }
