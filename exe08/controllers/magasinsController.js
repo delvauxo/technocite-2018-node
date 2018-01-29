@@ -15,7 +15,7 @@ exports.addMagasin = (req, res) => {
 
 exports.createMagasin = async (req, res) => {
     const magosh = await new Magasin(req.body).save()
-    res.redirect('/')
+    res.redirect('/magasins')
 }
 
 exports.getMagasinBySlug = async (req, res, next) => {
@@ -31,7 +31,7 @@ exports.editMagasin = async (req, res) => {
 
 exports.deleteMagasin = async (req, res) => {
     const magosh = await Magasin.findOneAndRemove({_id : req.params.id})
-    res.redirect('/')
+    res.redirect('/magasins')
 }
 
 

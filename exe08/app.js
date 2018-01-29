@@ -17,7 +17,7 @@ const User = mongoose.model('User')
 //view engine setup
 app.engine('hbs',hbs.express4({
     partialsDir : [`${__dirname}/views/partials`],
-    defaultLayout : `${__dirname}/views/layouts/main.hbs`
+    defaultLayout : `${__dirname}/views/layouts/classic.hbs`
 }))
 
 app.set('view engine','hbs')

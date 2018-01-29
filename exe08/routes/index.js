@@ -10,17 +10,23 @@ const authenticationController = require(`${process.cwd()}/controllers/authentic
 router.get('/register', userController.registerForm)
 router.post('/register', userController.checkRegister, userController.register, userController.registerAfter)
 
+
 // LOGIN
 router.get('/login', userController.loginForm)
 router.post('/login', authenticationController.login)
 
+
 // LOGOUT
 router.get('/logout', authenticationController.logout)
+
 
 // HOME
 router.get('/', pagesController.home)
 
+
 // MAGASINS
+router.get('/magasins', pagesController.magasins)
+
 // --add
 router.get('/magasins/add', 
     authenticationController.isLoggedIn, 
@@ -43,8 +49,10 @@ router.post('/magasins/add/:id',
 // --delete
 router.get('/magasins/:id/delete', magasinsController.deleteMagasin)
 
+
 // MAGASIN DETAILS
 router.get('/magasin/:slug', magasinsController.getMagasinBySlug)
+
 
 // ABOUT
 router.get('/about', pagesController.about)
