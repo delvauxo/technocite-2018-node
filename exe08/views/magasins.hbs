@@ -11,16 +11,16 @@
 
         <div class="row">
             {{#each magasins as |magasin|}}
-                <div class="col-md-4">
-                    <div>
-                        <a href="/magasin/{{magasin.slug}}">
+                <div class="col-md-3">
+                    <a href="/magasin/{{magasin.slug}}">
+                        <div>
                             <img src="/uploads/{{magasin.img}}" alt="{{magasin.desc}}">
                             <h2>{{magasin.name}}</h2>
                             <div></div>
                             <p>{{magasin.desc}}</p>
                             <button>Read more</button>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             {{/each}}
         </div>

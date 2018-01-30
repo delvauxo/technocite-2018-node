@@ -561,65 +561,77 @@ header div nav ul:last-of-type {
   content: '"';
 }
 
-#magasins div div div div {
-  background-color: white;
-}
-
-#magasins div div div div a {
+#magasins div div div a {
   text-decoration: none;
   color: inherit;
 }
 
-#magasins div div div div a img {
-  width: 100%;
-  min-height: 250px;
-  max-height: 250px;
-  border-bottom: 3px solid #d5d5d5;
+#magasins div div div a > div {
+  background-color: white;
 }
 
-#magasins div div div div a h2 {
+#magasins div div div a > div img {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  border-bottom: 3px solid #d5d5d5;
+  transition: all 0.5s ease-out;
+}
+
+#magasins div div div a > div h2 {
   text-align: center;
 }
 
-#magasins div div div div a div {
+#magasins div div div a > div div {
   margin: 15px auto 0 auto;
   width: 25%;
   height: 1px;
   background-color: #bbbbbb;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-#magasins div div div div a p {
+#magasins div div div a > div p {
   text-align: center;
   padding: 15px;
 }
 
-#magasins div div div div a button {
+#magasins div div div a > div button {
   display: block;
   margin: 0 auto 25px auto;
   padding: 10px 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
-  background-color: #EF7836;
-  border: 0px solid #e05b12;
-  transition: all 0.3s ease-out;
+  color: #bbbbbb;
+  background-color: #eee;
+  border: 0px solid #EF7836;
+  transition: all 0.5s ease-out;
 }
 
-#magasins div div div div a button:hover {
-  background-color: #e05b12;
-}
-
-#magasins div div div div a:after {
+#magasins div div div a > div:after {
   content: '';
   display: block;
   background: #d5d5d5;
   height: 3px;
   width: 100%;
+  transition: all 0.5s ease-out;
 }
 
-#magasins div div div div a:hover div {
-  background-color: #e05b12;
+#magasins div div div a > div:hover > div {
+  width: 50%;
+  background-color: #EF7836;
+}
+
+#magasins div div div a > div:hover > button {
+  color: white;
+  background-color: #EF7836;
+}
+
+#magasins div div div a > div:hover > img {
+  border-bottom: 3px solid #EF7836;
+}
+
+#magasins div div div a > div:hover:after {
+  background: #EF7836;
 }
 
 #about {

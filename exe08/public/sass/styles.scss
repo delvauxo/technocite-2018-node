@@ -562,20 +562,21 @@ header {
 
       div {
         // background-color: yellow;
+        
+      a {
+        text-decoration: none;
+        color: inherit;
 
-        div {
+        > div {
           background-color: white;     
           
-          a {
-            text-decoration: none;
-            color: inherit;
 
             img {
               width: 100%;
-              min-height: 250px;
-              max-height: 250px;
+              min-height: 150px;
+              max-height: 150px;
               border-bottom: 3px solid #d5d5d5;
-
+              transition: all 0.5s ease-out;
             }
             
             h2 {
@@ -587,7 +588,7 @@ header {
               width: 25%;
               height: 1px;
               background-color: darken(#eee, 20%);
-              transition: all 0.3s ease-out;
+              transition: all 0.5s ease-out;
             }
             
             p {
@@ -601,14 +602,14 @@ header {
               padding: 10px 15px;
               font-weight: bold;
               text-transform: uppercase;
-              color: white;
-              background-color: $orangeItnb;
-              border: 0px solid darken($orangeItnb, 10%);
-              transition: all 0.3s ease-out;
+              color: darken(#eee, 20%);
+              background-color: #eee;
+              border: 0px solid $orangeItnb;
+              transition: all 0.5s ease-out;
 
-              &:hover {
-                background-color: darken($orangeItnb, 10%);
-              }
+              // &:hover {
+              //   background-color: darken($orangeItnb, 10%);
+              // }
             }
 
             &:after {
@@ -616,14 +617,29 @@ header {
               display: block;
               background: #d5d5d5;
               height: 3px;
-              width: 100%; 
+              width: 100%;
+              transition: all 0.5s ease-out; 
             }
 
-            &:hover div {
-              background-color: darken($orangeItnb, 10%);
+            &:hover > div {
+              width: 50%;
+              background-color: $orangeItnb;
             }
+
+            &:hover > button {
+              color: white;
+              background-color: $orangeItnb;
+            }
+
+            &:hover > img {
+              border-bottom: 3px solid $orangeItnb;
+            }
+
+            &:hover:after {
+              background: $orangeItnb;
+            }
+            
           }
-
         }
       }
 
