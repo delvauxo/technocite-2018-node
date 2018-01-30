@@ -479,12 +479,23 @@ header div nav ul li a {
   text-transform: capitalize;
   color: white;
   background-color: #333333;
-  transition: all 0.3s ease-out;
 }
 
 header div nav ul li a:hover {
   text-decoration: none;
   color: white;
+}
+
+header div nav ul li > div {
+  margin: 0 auto;
+  width: 0%;
+  height: 1px;
+  background-color: #bbbbbb;
+  transition: all 0.5s ease-out;
+}
+
+header div nav ul li:hover > div {
+  width: 50%;
   background-color: #EF7836;
 }
 

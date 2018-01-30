@@ -456,16 +456,30 @@ header {
                     text-transform: capitalize;
                     color: white;
                     background-color: lighten(black, 20%);
-                    transition: all 0.3s ease-out;
+                    // transition: all 0.3s ease-out;
 
                     &:hover {
                       text-decoration: none;
                       color: white;
-                      background-color: $orangeItnb;
+                      // background-color: $orangeItnb;
                       
                     }
                   }
                   
+                  > div {
+                    margin: 0 auto;
+                    width: 0%;
+                    height: 1px;
+                    background-color: darken(#eee, 20%);
+                    transition: all 0.5s ease-out;
+
+                  }
+
+                  &:hover > div {
+                    width: 50%;
+                    background-color: $orangeItnb;
+                  }
+
                   &:not(:last-child) a {
                     border-right: 1px solid black;
                   }
