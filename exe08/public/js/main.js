@@ -1,10 +1,7 @@
-(function($) {
-
-    $(document).ready(function() {
-
-        
-
-
+(function( $ ){
+    
+    $(document).ready(function () {
+        alert('DONE')  
     })
 
-})(jQuery)
+})( jQuery )

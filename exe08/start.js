@@ -1,3 +1,4 @@
+const $ = require('jquery')
 const [major,minor]=process.versions.node.split('.').map(parseFloat)
 if(major <7 || major ===7 && minor <=5){
     console.log('The node version of the server is too low for modern node programming')
